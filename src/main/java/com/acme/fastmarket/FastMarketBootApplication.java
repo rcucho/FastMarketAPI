@@ -10,4 +10,8 @@ public class FastMarketBootApplication {
         SpringApplication.run(FastMarketBootApplication.class, args);
     }
 
+    @Bean
+    public ModelMapper modelMapper() {
+        return new ModelMapper();
+    }
 }
